@@ -6,6 +6,21 @@
 	<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 	<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 </head>
+	
+<body>
+    <video id="second-video-player" controls>
+        <source src="output_video/真三国无双.mp4" type="video/mp4">
+        <!-- 提供备用内容，以防浏览器不支持视频格式 -->
+    </video>
+
+      
+    {%for zm in certain_zms%}
+    <h3>
+            <p>{{zm}} </p>
+    </h3>
+    {%end%}
+</body>
+
 <body>
     评论页面
 	<!-- 创建一个容器用于存放 gitalk -->
